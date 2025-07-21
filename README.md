@@ -6,11 +6,11 @@ This is a simple yet stylish QR Code Generator web application built using Pytho
 
 ## 🚀 Features
 
-🔸 Generate QR code for any text or link.
-🔸 Clean and responsive web UI.
-🔸 Built with Flask (Python backend).
-🔸 Lightweight — no frontend JavaScript.
-🔸 QR image saved and served from the /static folder.
+- 🔸 Generate QR code for any text or link.  
+- 🔸 Clean and responsive web UI.  
+- 🔸 Built with Flask (Python backend).  
+- 🔸 Lightweight — no frontend JavaScript.  
+- 🔸 QR image saved and served from the `/static` folder.
 
 ---
 
@@ -35,8 +35,7 @@ This is a simple yet stylish QR Code Generator web application built using Pytho
 
 ## 🛠️ Installation & Setup
 
-bash
-```
+```bash
 git clone https://github.com/yourusername/qr-code-generator.git
 cd qr-code-generator
 pip install flask qrcode pillow
@@ -44,15 +43,15 @@ pip install flask qrcode pillow
 
 ## ▶️ Run the App
 
-bash
-```
+```bash
 python app.py
 ```
 
 ## Then open your browser and go to:
-cpp
-```
+
+```bash
 http://127.0.0.1:5000
+```
 
 
 
