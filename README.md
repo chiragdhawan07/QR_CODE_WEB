@@ -6,11 +6,11 @@ This is a simple yet stylish QR Code Generator web application built using Pytho
 
 ## 🚀 Features
 
-🔸 Generate QR code for any text or link
-🔸 Clean and responsive web UI
-🔸 Built with Flask (Python backend)
-🔸 Lightweight — no frontend JavaScript
-🔸 QR image saved and served from the /static folder
+🔸 Generate QR code for any text or link.
+🔸 Clean and responsive web UI.
+🔸 Built with Flask (Python backend).
+🔸 Lightweight — no frontend JavaScript.
+🔸 QR image saved and served from the /static folder.
 
 ---
 
