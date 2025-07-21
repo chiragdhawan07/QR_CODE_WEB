@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✨ QR Code Generator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #00f2ff;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #00f2ff;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #00b0b5;
+    }
+
+    .qr-code {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.75rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔳 QR Code Generator</h1>
+    <form method="POST">
+      <input type="text" name="data" placeholder="Enter text or link..." autofocus required />
+      <button type="submit">Generate QR</button>
+    </form>
+
+    {% if qr_generated %}
+      <div class="qr-code">
+        <img src="{{ url_for('static', filename='qr_code.png') }}" alt="QR Code" />
+      </div>
+    {% endif %}
+
+    <footer>Built with ❤️ Flask</footer>
+  </div>
+</body>
+</html>
