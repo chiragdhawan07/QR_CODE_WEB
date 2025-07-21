@@ -36,7 +36,7 @@ This is a simple yet stylish QR Code Generator web application built using Pytho
 ## 🛠️ Installation & Setup
 
 ```bash
-git clone https://github.com/chiragdhawan07/qr-code-generator.git
+git clone https://github.com/chiragdhawan07/QR_CODE_WEB.git
 cd qr-code-generator
 pip install flask qrcode pillow
 ```
